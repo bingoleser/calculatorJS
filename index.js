@@ -1,1 +1,1 @@
-console.log("hi")
+console.log("finish css file then start js")
