@@ -64,6 +64,12 @@ function handleSymbol(params) {
          case "×":
           handleMath(params)
          break;
+         case"←":
+         if (screenNumber.length>1) {
+            console.log("backtick")
+            screenNumber=screenNumber.slice(0,-1)
+         }
+         break;
     }
  
 }
@@ -74,6 +80,7 @@ function handleSymbol(params) {
 
 function buttonClick(value){
 if (isNaN(value)) {
+    console.log(value)
     handleSymbol(value)
 }else{
   handleNumber(value)
